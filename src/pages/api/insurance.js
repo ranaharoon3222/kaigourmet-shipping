@@ -33,7 +33,7 @@ export default async function handler(req, res) {
   const cartValue = JSON?.parse(req?.body);
 
   try {
-    const allVariantsUrl = `https://all-fresh-seafood.myshopify.com/admin/api/2023-01/products/8256097845481/variants.json`;
+    const allVariantsUrl = `https://kaigourmet-com.myshopify.com/admin/api/2023-01/products/6976554106967/variants.json`;
 
     const fetchAllVaraints = await fetch(allVariantsUrl, {
       method: 'GET',
@@ -49,28 +49,28 @@ export default async function handler(req, res) {
       if (
         cartValue.value >= 0 &&
         cartValue.value <= 100 &&
-        item.sku == 'SHIPINSURE001'
+        item.sku == 'KAISHIPINSURE001'
       ) {
         return item;
       } else if (
         cartValue.value >= 101 &&
         cartValue.value <= 200 &&
-        item.sku == 'SHIPINSURE002'
+        item.sku == 'KAISHIPINSURE002'
       ) {
         return item;
       } else if (
         cartValue.value >= 201 &&
         cartValue.value <= 300 &&
-        item.sku == 'SHIPINSURE003'
+        item.sku == 'KAISHIPINSURE003'
       ) {
         return item;
       } else if (
         cartValue.value >= 301 &&
         cartValue.value <= 499 &&
-        item.sku == 'SHIPINSURE004'
+        item.sku == 'KAISHIPINSURE004'
       ) {
         return item;
-      } else if (cartValue.value >= 500 && item.sku == 'SHIPINSURE005') {
+      } else if (cartValue.value >= 500 && item.sku == 'KAISHIPINSURE005') {
         return item;
       }
     });
