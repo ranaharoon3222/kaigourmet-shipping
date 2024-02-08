@@ -49,76 +49,76 @@ export default async function handler(req, res) {
       if (
         cartValue.value >= 0 &&
         cartValue.value <= 70 &&
-        item.sku == 'KAISHIPINSURE001'
+        item.title == 'KAISHIPINSURE001'
       ) {
         return item;
       } else if (
         cartValue.value >= 71 &&
         cartValue.value <= 149 &&
-        item.sku == 'KAISHIPINSURE002'
+        item.title == 'KAISHIPINSURE002'
       ) {
         return item;
       } else if (
         cartValue.value >= 150 &&
         cartValue.value <= 199 &&
-        item.sku == 'KAISHIPINSURE003'
+        item.title == 'KAISHIPINSURE003'
       ) {
         return item;
       } else if (
         cartValue.value >= 200 &&
         cartValue.value <= 249 &&
-        item.sku == 'KAISHIPINSURE004'
+        item.title == 'KAISHIPINSURE004'
       ) {
         return item;
       } else if (
         cartValue.value >= 250 &&
         cartValue.value <= 300 &&
-        item.sku == 'KAISHIPINSURE005'
+        item.title == 'KAISHIPINSURE005'
       ) {
         return item;
       } else if (
         cartValue.value >= 301 &&
         cartValue.value <= 349 &&
-        item.sku == 'KAISHIPINSURE006'
+        item.title == 'KAISHIPINSURE006'
       ) {
         return item;
       } else if (
         cartValue.value >= 350 &&
         cartValue.value <= 399 &&
-        item.sku == 'KAISHIPINSURE007'
+        item.title == 'KAISHIPINSURE007'
       ) {
         return item;
       } else if (
         cartValue.value >= 400 &&
         cartValue.value <= 449 &&
-        item.sku == 'KAISHIPINSURE008'
+        item.title == 'KAISHIPINSURE008'
       ) {
         return item;
       } else if (
         cartValue.value >= 450 &&
         cartValue.value <= 499 &&
-        item.sku == 'KAISHIPINSURE009'
+        item.title == 'KAISHIPINSURE009'
       ) {
         return item;
       } else if (
         cartValue.value >= 500 &&
         cartValue.value <= 549 &&
-        item.sku == 'KAISHIPINSURE010'
+        item.title == 'KAISHIPINSURE010'
       ) {
         return item;
       } else if (
         cartValue.value >= 550 &&
         cartValue.value <= 600 &&
-        item.sku == 'KAISHIPINSURE011'
+        item.title == 'KAISHIPINSURE011'
       ) {
         return item;
       } else if (
         cartValue.value >= 601 &&
         cartValue.value <= 750 &&
-        item.sku == 'KAISHIPINSURE012'
+        item.title == 'KAISHIPINSURE012'
       ) {
         return item;
-      } else if (cartValue.value >= 751 && item.sku == 'KAISHIPINSURE013') {
+      } else if (cartValue.value >= 751 && item.title == 'KAISHIPINSURE013') {
         return item;
       }
     });
